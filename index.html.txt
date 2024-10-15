@@ -28,7 +28,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="header.jpg" alt="Agromax">
+        <img src="https://github.com/supriyo-web/Agaromax/blob/main/header.jpg" alt="Agromax">
     </header>
 
     <!-- Introduction Section -->
