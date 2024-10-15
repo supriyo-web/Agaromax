@@ -28,7 +28,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="path-to-your-agromax-image.jpg" alt="Agromax">
+        <img src="header.jpg" alt="Agromax">
     </header>
 
     <!-- Introduction Section -->
