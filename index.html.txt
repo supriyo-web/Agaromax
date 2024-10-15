@@ -28,7 +28,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="https://github.com/supriyo-web/Agaromax/blob/main/header.jpg" alt="Agromax">
+        <img src="https://github.com/supriyo-web/Agaromax/raw/main/header.jpg" alt="Agromax Header">
     </header>
 
     <!-- Introduction Section -->
@@ -38,7 +38,7 @@
             <p>A boy from Class 6, studying in Ladhuram Thosniwal Sarada Vidya Mandir.</p>
             <p>I made this project to help farmers by creating a remote-controlled agricultural machine with useful features to assist farmers in their daily work.</p>
         </div>
-        <img src="https://github.com/supriyo-web/Agaromax/blob/main/archisman%20pic.jpg" alt="Archisman" style="width: 200px; height: auto;">
+        <img src="https://github.com/supriyo-web/Agaromax/raw/main/archisman%20pic.jpg" alt="Archisman" style="width: 200px; height: auto;">
     </section>
 
     <!-- Project Description Section -->
