@@ -25,6 +25,20 @@
         form {
             margin-top: 20px;
         }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .comment {
+            margin: 10px 0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -58,20 +72,20 @@
     <!-- Comments Section -->
     <section>
         <h2>Comments</h2>
-        <form>
-            <label for="comment">Leave a comment:</label><br>
-            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your thoughts here..."></textarea><br>
+        <form onsubmit="submitComment(); return false;">
+            <label for="comment-input">Leave a comment:</label><br>
+            <textarea id="comment-input" name="comment" rows="4" cols="50" placeholder="Write your thoughts here..."></textarea><br>
             <button type="submit">Submit</button>
         </form>
-        <div id="comments-section">
+        <div id="comments-display">
             <h3>User Comments</h3>
             <p>No comments yet. Be the first to comment!</p>
         </div>
     </section>
 
- <!-- Footer Section -->
+    <!-- Footer Section -->
     <div class="footer">
-        Made by Supriyo - Web launched using GitHub
+        Made by Supriyo - Web, launched using GitHub
     </div>
 
     <script>
@@ -79,7 +93,12 @@
             const commentInput = document.getElementById('comment-input').value;
             const commentsDisplay = document.getElementById('comments-display');
 
-            if(commentInput) {
+            if (commentInput) {
+                // Clear the default message
+                if (commentsDisplay.querySelector('p')) {
+                    commentsDisplay.querySelector('p').remove();
+                }
+
                 const newComment = document.createElement('div');
                 newComment.classList.add('comment');
                 newComment.innerText = commentInput;
@@ -92,4 +111,5 @@
 
 </body>
 </html>
+
 
