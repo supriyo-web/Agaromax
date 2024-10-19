@@ -69,9 +69,27 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Made by Supriyo-Web, launched using GitHub</p>
-    </footer>
+ <!-- Footer Section -->
+    <div class="footer">
+        Made by Supriyo - Web launched using GitHub
+    </div>
+
+    <script>
+        function submitComment() {
+            const commentInput = document.getElementById('comment-input').value;
+            const commentsDisplay = document.getElementById('comments-display');
+
+            if(commentInput) {
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                newComment.innerText = commentInput;
+
+                commentsDisplay.appendChild(newComment);
+                document.getElementById('comment-input').value = ''; // Clear input
+            }
+        }
+    </script>
+
 </body>
 </html>
+
